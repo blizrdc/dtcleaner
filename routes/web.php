@@ -21,4 +21,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/data/test', 'DataController@Test');
+Route::get('/data/upload', 'DataController@Upload');
+Route::post('/data/upload', 'DataController@Upload');
+Route::post('/data/down', 'DataController@Down');
